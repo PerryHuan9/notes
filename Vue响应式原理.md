@@ -171,10 +171,6 @@ effect(() => {
 当`effect`中再使用`effect`的时候，没有方法拿到正确的结果，这是因为`effect.ts`中的`acctiveEffext`在`effect`内部的`effect`执行的时候被修改了，以至于不能正确收集到依赖，可以通过维护一个栈`effectStack`来解决这个问题，`Vue`内部正是这样处理的。
 
 
-
-
-
-
 ## Vue响应式
 
 
