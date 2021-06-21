@@ -10,8 +10,7 @@
 
 ### 解决策略
 
-* 防止html中出现注入
-* 防止JavaScript执行时，执行恶意代码
+* 防止html中出现注入, 防止JavaScript执行时，执行恶意代码
 * 使用纯前端渲染，使用框架时小心使用v-html
 * 使用完善的html转义库对插入的内容进行转义，不同上下文的转义规则不一样
 * 使用CSP(Content Security Policy)
@@ -35,7 +34,7 @@
 
 ### 预防手段
 
-* 后端对接口设置同源检测，可以通过检查Origin或Referer Header。
+* 后端对接口设置同源检测，检查Origin或Referer Header。
 * 使用token，每个请求都携带token。
 * 敏感操作增加交互操作，如输入密码，发送验证码。
 * 使用samesite cookie，使cookie只能在当前网站使用。
