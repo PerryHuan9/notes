@@ -10,10 +10,10 @@
 
 ### 解决策略
 
-* 防止html中出现注入, 防止JavaScript执行时，执行恶意代码
-* 使用纯前端渲染，使用框架时小心使用v-html
-* 使用完善的html转义库对插入的内容进行转义，不同上下文的转义规则不一样
-* 使用CSP(Content Security Policy)
+1. 防止html中出现注入, 防止JavaScript执行时，执行恶意代码
+2. 使用纯前端渲染，使用框架时小心使用v-html
+3. 使用完善的html转义库对插入的内容进行转义，不同上下文的转义规则不一样
+4. 使用CSP(Content Security Policy)
 
 #### CSP
 严格的 CSP 在 XSS 的防范中可以起到以下的作用：
@@ -34,9 +34,9 @@
 
 ### 预防手段
 
-* 后端对接口设置同源检测，检查Origin或Referer Header。
-* 使用token，每个请求都携带token。
-* 敏感操作增加交互操作，如输入密码，发送验证码。
-* 使用samesite cookie，使cookie只能在当前网站使用。
+1. 后端对接口设置同源检测，检查Origin或Referer Header。
+2. 使用token，每个请求都携带token。
+3. 敏感操作增加交互操作，如输入密码，发送验证码。
+4. 使用samesite cookie，使cookie只能在当前网站使用。
 
 
